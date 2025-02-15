@@ -187,15 +187,7 @@ class DropdownDiv extends Element {
   }
 
   initialise() {
-    this.assignContext([
-      "showDropdownList",
-      "hideDropdownList",
-      "isDropdownListEmpty",
-      "isDropdownListHidden",
-      "getSelectedDropdownItem",
-      "selectNextDisplayedDropdownItem",
-      "selectPreviousDisplayedDropdownItem"
-    ]);
+    this.assignContext();
   }
 
   static tagName = "div";
@@ -212,8 +204,6 @@ export default withStyle(DropdownDiv)`
   height: ${largeSize};
   display: grid;
   overflow: visible;
-  position: relative;
-  flex-grow: 1;
   grid-template-rows: ${largeSize} auto;
   grid-template-columns: 1fr ;
   

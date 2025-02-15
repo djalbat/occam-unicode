@@ -199,7 +199,6 @@ class DropdownList extends Element {
 
 export default withStyle(DropdownList)`
 
-  width: 100%;
   height: fit-content;
   border: 1px solid ${commonBorderColour};  
   display: grid;

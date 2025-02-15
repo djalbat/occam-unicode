@@ -3,7 +3,8 @@
 import withStyle from "easy-with-style";  ///
 
 import { Element } from "easy";
-import { UnicodeCharacterDropdownDiv } from "../../../index"; ///
+
+import UnicodeCharacterDropdownDiv from "../div/dropdown/unicodeCharacter";
 
 import { mainHeaderHeight, mainHeaderPaddingRight } from "../../styles";
 
