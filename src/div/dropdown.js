@@ -5,6 +5,8 @@ import withStyle from "easy-with-style";  ///
 import { Element } from "easy";
 import { keyCodes } from "necessary";
 
+import customEventMixins from "../mixins/customEvent";
+
 import { defer } from "../utilities/time";
 import { largeSize } from "../sizes";
 import { BLUR_DELAY } from "../constants";
@@ -202,6 +204,8 @@ class DropdownDiv extends Element {
     className: "dropdown"
   };
 }
+
+Object.assign(DropdownDiv.prototype, customEventMixins);
 
 export default withStyle(DropdownDiv)`
 
