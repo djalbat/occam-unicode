@@ -2,9 +2,9 @@
 
 import withStyle from "easy-with-style";  ///
 
-import { DropdownList } from "../../list/dropdown";
 import { commonScheme, scrollbarMixin } from "occam-styles";
 
+import DropdownList from "../../list/dropdown";
 import UnicodeCharacterDropdownItem from "../../item/dropbown/unicodeCharacter";
 
 import { greatSize } from "../../sizes";
