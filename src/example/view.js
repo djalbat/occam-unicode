@@ -5,12 +5,14 @@ import withStyle from "easy-with-style";  ///
 import { Element } from "easy";
 
 import MainHeader from "./view/header/main";
+import ComputerModernDiv from "./view/div/computerModern";
 
 class View extends Element {
   childElements() {
     return ([
 
-      <MainHeader/>
+      <MainHeader/>,
+      <ComputerModernDiv/>
 
     ]);
   }

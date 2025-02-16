@@ -3,10 +3,13 @@
 import withStyle from "easy-with-style";  ///
 
 import { Element } from "easy";
+import { colours } from "occam-styles";
 
 import UnicodeCharacterDropdownDiv from "../div/dropdown/unicodeCharacter";
 
 import { mainHeaderHeight, mainHeaderPaddingRight } from "../../styles";
+
+const { woodsmoke } = colours;
 
 class MainHeader extends Element {
   childElements() {
@@ -36,6 +39,6 @@ export default withStyle(MainHeader)`
   padding-right: ${mainHeaderPaddingRight};
   flex-direction: row;
   justify-content: flex-end;
-  
+  background-color: ${woodsmoke};  
   
 `;
