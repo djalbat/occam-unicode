@@ -29,12 +29,9 @@ class MainHeader extends Element {
 
 export default withStyle(MainHeader)`
 
-  top: 0;
-  left: 0;
   width: 100%;
   height: ${mainHeaderHeight};
   display: flex;
-  position: fixed;
   align-items: center;
   padding-right: ${mainHeaderPaddingRight};
   flex-direction: row;

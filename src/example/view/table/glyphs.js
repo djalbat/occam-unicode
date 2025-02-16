@@ -6,14 +6,14 @@ import { Element } from "easy";
 
 import GlyphsTableRow from "../tableRow/glyphs";
 
-import { unicodeCharacters } from "../../../unicodeCharacterMap";
-
 class GlyphsTable extends Element {
   childElements() {
-    const glyphsTableRows = unicodeCharacters.map((unicodeCharacter, index) => {
+    const { characterMap } = this.properties,
+          unicodeCharacters = Object.keys(characterMap),
+          glyphsTableRows = unicodeCharacters.map((unicodeCharacter) => {
             return (
 
-              <GlyphsTableRow index={index} />
+              <GlyphsTableRow unicodeCharacter={unicodeCharacter} />
 
             );
           }),
@@ -24,6 +24,10 @@ class GlyphsTable extends Element {
 
   static tagName = "table";
 
+  static ignoredProperties = [
+    "characterMap"
+  ];
+
   static defaultProperties = {
     className: "glyphs"
   };
@@ -31,7 +35,6 @@ class GlyphsTable extends Element {
 
 export default withStyle(GlyphsTable)`
 
-  margin-top: 16rem;
   border-collapse: collapse;
   
 `;
