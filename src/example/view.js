@@ -6,20 +6,26 @@ import MainHeader from "./view/header/main";
 import GlyphsTable from "./view/table/glyphs";
 import SecondaryHeading from "./view/heading/secondary"
 
-import { arrowCharacterMap,
+import { shapeCharacterMap,
+         angleCharacterMap,
+         arrowCharacterMap,
          harpoonCharacterMap,
+         equalityCharacterMap,
          greekLetterCharacterMap,
          headedArrowCharacterMap,
          circleCircledCharacterMap,
          classTheoreticCharacterMap,
          logicalOperatorCharacterMap,
-         isomorphismSymbolCharacterMap,
          doubleTripleArrowCharacterMap,
+         isomorphismSymbolCharacterMap,
          relationalOperatorCharacterMap,
-         arithmeticOperatorCharacterMap,
          mathematicalScriptCharacterMap,
+         arithmeticOperatorCharacterMap,
+         derivativeIntegralCharacterMap,
+         parenthesisBracketCharacterMap,
          mathematicalFrakturCharacterMap,
          superscriptSubscriptCharacterMap,
+         miscellaneousOperatorCharacterMap,
          mathematicalDoubleStruckCharacterMap } from "../unicodeCharacterMap";
 
 export default class View extends Element {
@@ -28,13 +34,57 @@ export default class View extends Element {
 
       <MainHeader/>,
       <SecondaryHeading>
-        Harpoon
+        Miscellaneous Operator
       </SecondaryHeading>,
-      <GlyphsTable characterMap={harpoonCharacterMap} />,
+      <GlyphsTable characterMap={miscellaneousOperatorCharacterMap} />,
+      <SecondaryHeading>
+        Class Theoretic
+      </SecondaryHeading>,
+      <GlyphsTable characterMap={classTheoreticCharacterMap} />,
+      <SecondaryHeading>
+        Angle
+      </SecondaryHeading>,
+      <GlyphsTable characterMap={angleCharacterMap} />,
+      <SecondaryHeading>
+        Logical Operator
+      </SecondaryHeading>,
+      <GlyphsTable characterMap={logicalOperatorCharacterMap} />,
+      <SecondaryHeading>
+        Shape
+      </SecondaryHeading>,
+      <GlyphsTable characterMap={shapeCharacterMap} />,
+      <SecondaryHeading>
+        Parenthesis Bracket
+      </SecondaryHeading>,
+      <GlyphsTable characterMap={parenthesisBracketCharacterMap} />,
+      <SecondaryHeading>
+        Equality
+      </SecondaryHeading>,
+      <GlyphsTable characterMap={equalityCharacterMap} />,
+      <SecondaryHeading>
+        Arithmetic Operator
+      </SecondaryHeading>,
+      <GlyphsTable characterMap={arithmeticOperatorCharacterMap} />,
+      <SecondaryHeading>
+        Derivative Integral
+      </SecondaryHeading>,
+      <GlyphsTable characterMap={derivativeIntegralCharacterMap} />,
+      <SecondaryHeading>
+        Circle Circled
+      </SecondaryHeading>,
+      <GlyphsTable characterMap={circleCircledCharacterMap} />,
       <SecondaryHeading>
         Arrow
       </SecondaryHeading>,
       <GlyphsTable characterMap={arrowCharacterMap} />,
+      <SecondaryHeading>
+        Relational Operator
+      </SecondaryHeading>,
+      <GlyphsTable characterMap={relationalOperatorCharacterMap} />,
+      <SecondaryHeading>
+        Harpoon
+      </SecondaryHeading>,
+      <GlyphsTable characterMap={harpoonCharacterMap} />,
       <SecondaryHeading>
         Double Triple Arrow
       </SecondaryHeading>,
@@ -44,33 +94,13 @@ export default class View extends Element {
       </SecondaryHeading>,
       <GlyphsTable characterMap={headedArrowCharacterMap} />,
       <SecondaryHeading>
-        Circle Circled
-      </SecondaryHeading>,
-      <GlyphsTable characterMap={circleCircledCharacterMap} />,
-      <SecondaryHeading>
         Superscript Subscript
       </SecondaryHeading>,
       <GlyphsTable characterMap={superscriptSubscriptCharacterMap} />,
       <SecondaryHeading>
-        Relational Operator
-      </SecondaryHeading>,
-      <GlyphsTable characterMap={relationalOperatorCharacterMap} />,
-      <SecondaryHeading>
-        Class Theoretic
-      </SecondaryHeading>,
-      <GlyphsTable characterMap={classTheoreticCharacterMap} />,
-      <SecondaryHeading>
         Isomorphism
       </SecondaryHeading>,
       <GlyphsTable characterMap={isomorphismSymbolCharacterMap} />,
-      <SecondaryHeading>
-        Logical Operator
-      </SecondaryHeading>,
-      <GlyphsTable characterMap={logicalOperatorCharacterMap} />,
-      <SecondaryHeading>
-        Arithmetic Operator
-      </SecondaryHeading>,
-      <GlyphsTable characterMap={arithmeticOperatorCharacterMap} />,
       <SecondaryHeading>
         Greek Letter
       </SecondaryHeading>,
