@@ -2,7 +2,7 @@
 
 import "juxtapose";
 
-import withStyle from "easy-with-style";
+import withStyle from "easy-with-style";  ///
 
 import { Body } from "easy";
 import { juliaMonoStyle } from "occam-styles";

@@ -1,18 +1,16 @@
 "use strict";
 
-import withStyle from "easy-with-style";  ///
-
 import { Element } from "easy";
 
 import MainHeader from "./view/header/main";
-import ComputerModernDiv from "./view/div/computerModern";
+import GlyphsTable from "./view/table/glyphs";
 
-class View extends Element {
+export default class View extends Element {
   childElements() {
     return ([
 
       <MainHeader/>,
-      <ComputerModernDiv/>
+      <GlyphsTable/>
 
     ]);
   }
@@ -23,9 +21,3 @@ class View extends Element {
     className: "view"
   };
 }
-
-export default withStyle(View)`
-
-  padding: 2rem;
-  
-`;
