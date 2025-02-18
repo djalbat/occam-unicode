@@ -38,3 +38,4 @@ export default withStyle(GlyphsTable)`
   border-collapse: collapse;
   
 `;
+
