@@ -27,7 +27,7 @@ import { shapeCharacterMap,
          parenthesisBracketCharacterMap,
          doubleStruckLettersCharacterMap,
          superscriptSubscriptCharacterMap,
-         miscellaneousOperatorCharacterMap } from "../unicodeCharacterMap";
+         miscellaneousCharacterMap } from "../unicodeCharacterMap";
 
 export default class View extends Element {
   childElements() {
@@ -95,7 +95,7 @@ function characterMapFromName(name) {
     case "parenthesisBracket": characterMap = parenthesisBracketCharacterMap; break;
     case "doubleStruckLetters": characterMap = doubleStruckLettersCharacterMap; break;
     case "superscriptSubscript": characterMap = superscriptSubscriptCharacterMap; break;
-    case "miscellaneousOperator": characterMap = miscellaneousOperatorCharacterMap; break;
+    case "miscellaneous": characterMap = miscellaneousCharacterMap; break;
   }
 
   return characterMap;
