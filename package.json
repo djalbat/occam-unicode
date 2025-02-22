@@ -1,7 +1,7 @@
 {
   "name": "occam-unicode",
   "author": "James Smith",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "license": "MIT, Anti-996",
   "homepage": "https://github.com/djalbat/occam-unicode",
   "description": "Occam's Unicode functionality.",
@@ -10,17 +10,17 @@
     "url": "https://github.com/djalbat/occam-unicode"
   },
   "dependencies": {
-    "easy": "^22.0.1",
-    "easy-with-style": "^3.0.433",
+    "easy": "^23.0.1",
+    "easy-with-style": "^3.0.434",
     "necessary": "^14.3.2",
     "occam-styles": "^5.0.248"
   },
   "devDependencies": {
     "@swc/core": "^1.5.6",
-    "easy-layout": "^6.0.213",
+    "easy-layout": "^6.0.214",
     "esbuild": "^0.9.2",
     "express": "^4.17.1",
-    "juxtapose": "^4.0.116",
+    "juxtapose": "^4.0.117",
     "highmark-fonts": "^1.0.113",
     "lively-cli": "^2.0.65",
     "watchful-cli": "^1.7.56",
