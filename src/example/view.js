@@ -15,19 +15,19 @@ import { shapeCharacterMap,
          calculusCharacterMap,
          relationalCharacterMap,
          arithmeticCharacterMap,
-         greekLetterCharacterMap,
          headedArrowCharacterMap,
+         greekLetterCharacterMap,
+         miscellaneousCharacterMap,
          scriptLettersCharacterMap,
          circleCircledCharacterMap,
          tackTurnstileCharacterMap,
-         classTheoreticCharacterMap,
          frakturLettersCharacterMap,
+         classTheoreticCharacterMap,
          logicalOperatorCharacterMap,
          doubleTripleArrowCharacterMap,
          parenthesisBracketCharacterMap,
          doubleStruckLettersCharacterMap,
-         superscriptSubscriptCharacterMap,
-         miscellaneousCharacterMap } from "../unicodeCharacterMap";
+         superscriptSubscriptCharacterMap  } from "../unicodeCharacterMap";
 
 export default class View extends Element {
   childElements() {
@@ -74,28 +74,28 @@ function characterMapFromName(name) {
   let characterMap;
 
   switch (name) {
-    case "shape": characterMap = shapeCharacterMap; break;
-    case "angle": characterMap = angleCharacterMap; break;
-    case "arrow": characterMap = arrowCharacterMap; break;
-    case "harpoon": characterMap = harpoonCharacterMap; break;
-    case "equality": characterMap = equalityCharacterMap; break;
-    case "ordering": characterMap = orderingCharacterMap; break;
-    case "calculus": characterMap = calculusCharacterMap; break;
-    case "relational": characterMap = relationalCharacterMap; break;
-    case "arithmetic": characterMap = arithmeticCharacterMap; break;
-    case "greekLetter": characterMap = greekLetterCharacterMap; break;
-    case "headedArrow": characterMap = headedArrowCharacterMap; break;
-    case "scriptLetters": characterMap = scriptLettersCharacterMap; break;
-    case "circleCircled": characterMap = circleCircledCharacterMap; break;
-    case "tackTurnstile": characterMap = tackTurnstileCharacterMap; break;
-    case "classTheoretic": characterMap = classTheoreticCharacterMap; break;
-    case "frakturLetters": characterMap = frakturLettersCharacterMap; break;
-    case "logicalOperator": characterMap = logicalOperatorCharacterMap; break;
-    case "doubleTripleArrow": characterMap = doubleTripleArrowCharacterMap; break;
-    case "parenthesisBracket": characterMap = parenthesisBracketCharacterMap; break;
-    case "doubleStruckLetters": characterMap = doubleStruckLettersCharacterMap; break;
-    case "superscriptSubscript": characterMap = superscriptSubscriptCharacterMap; break;
-    case "miscellaneous": characterMap = miscellaneousCharacterMap; break;
+    case "shapeCharacter": characterMap = shapeCharacterMap; break;
+    case "angleCharacter": characterMap = angleCharacterMap; break;
+    case "arrowCharacter": characterMap = arrowCharacterMap; break;
+    case "harpoonCharacter": characterMap = harpoonCharacterMap; break;
+    case "equalityCharacter": characterMap = equalityCharacterMap; break;
+    case "orderingCharacter": characterMap = orderingCharacterMap; break;
+    case "calculusCharacter": characterMap = calculusCharacterMap; break;
+    case "relationalCharacter": characterMap = relationalCharacterMap; break;
+    case "arithmeticCharacter": characterMap = arithmeticCharacterMap; break;
+    case "headedArrowCharacter": characterMap = headedArrowCharacterMap; break;
+    case "greekLetterCharacter": characterMap = greekLetterCharacterMap; break;
+    case "miscellaneousCharacter": characterMap = miscellaneousCharacterMap; break;
+    case "scriptLettersCharacter": characterMap = scriptLettersCharacterMap; break;
+    case "circleCircledCharacter": characterMap = circleCircledCharacterMap; break;
+    case "tackTurnstileCharacter": characterMap = tackTurnstileCharacterMap; break;
+    case "frakturLettersCharacter": characterMap = frakturLettersCharacterMap; break;
+    case "classTheoreticCharacter": characterMap = classTheoreticCharacterMap; break;
+    case "logicalOperatorCharacter": characterMap = logicalOperatorCharacterMap; break;
+    case "doubleTripleArrowCharacter": characterMap = doubleTripleArrowCharacterMap; break;
+    case "parenthesisBracketCharacter": characterMap = parenthesisBracketCharacterMap; break;
+    case "doubleStruckLettersCharacter": characterMap = doubleStruckLettersCharacterMap; break;
+    case "superscriptSubscriptCharacter": characterMap = superscriptSubscriptCharacterMap; break;
   }
 
   return characterMap;
