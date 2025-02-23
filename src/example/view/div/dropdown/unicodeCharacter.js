@@ -2,7 +2,7 @@
 
 import withStyle from "easy-with-style";  ///
 
-import {UnicodeCharacterDropdownDiv} from "../../../../index";  ///
+import { UnicodeCharacterDropdownDiv } from "../../../../index";  ///
 
 import { unicodeCharacterDropdownDivWidth } from "../../../styles";
 
