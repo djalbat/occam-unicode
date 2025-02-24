@@ -105,9 +105,9 @@ When a Unicode character is selected the picker calls a controller method thus:
 controller.copyOrPasteUnicodeCharacter(unicodeCharacter);
 ```
 
-By the way, the funny name comes from the fact that in the Occam IDE there is a setting that decides whether or not the character is copied to the system clipboard or pasted directly into the active document.
+The funny name comes from the fact that in the Occam IDE there is a setting that decides whether or not the character is copied to the system clipboard or pasted directly into the active document, by the way.
 
-The way to support this is to use the [Sufficient](https://github.com/djalbat/sufficient) package:
+To continue, this is supported by way of the [Sufficient](https://github.com/djalbat/sufficient) package:
 
 ```
 import { Body } from "easy";
@@ -145,7 +145,7 @@ export default function createMethods(scheduler, model, view) {
 }
 ```
 
-Lastly, there is a `focusUnicodeCharacterDropdownInput()` method that can be utilised by includeing the controller methods that come with the picker itself:
+Lastly, there is a `focusUnicodeCharacterDropdownInput()` method that can be utilised by including the controller methods that come with the picker itself:
 
 ```
 import { createUnicodeMethods } from "occam-unicode";
