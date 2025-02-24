@@ -157,7 +157,7 @@ controller.assignMethods(createUnicodeMethods, scheduler, model, view);
 ...
 ```
 
-Now the Unicode picker can be focused:
+Now the Unicode picker can be focused at will with the following call:
 
 ```
 controller.focusUnicodeCharacterDropdownInput();
