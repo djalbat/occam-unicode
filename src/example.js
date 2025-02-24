@@ -5,14 +5,15 @@ import "juxtapose";
 import withStyle from "easy-with-style";  ///
 
 import { Body } from "easy";
+import { controller } from "sufficient";
 import { juliaMonoStyle } from "occam-styles";
 import { computerModernStyle } from "highmark-fonts";
+
+import createMethods from "./example/createMethods";
 
 const { renderStyle, renderStyles } = withStyle;
 
 import View from "./example/view";
-
-const body = new Body();
 
 renderStyles();
 
@@ -20,8 +21,15 @@ renderStyle(computerModernStyle);
 
 renderStyle(juliaMonoStyle);
 
-body.mount(
+const body = new Body(),  ///
+      view =
 
-  <View/>
+        <View/>
 
-);
+      ,
+      model = null,
+      scheduler = null;
+
+controller.assignMethods(createMethods, scheduler, model, view);
+
+body.mount(view);

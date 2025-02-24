@@ -99,6 +99,70 @@ class MainHeader extends Element {
 }
 ```
 
+When a Unicode character is selected the picker calls a controller method thus:
+
+```
+controller.copyOrPasteUnicodeCharacter(unicodeCharacter);
+```
+
+By the way, the funny name comes from the fact that in the Occam IDE there is a setting that decides whether or not the character is copied to the system clipboard or pasted directly into the active document.
+
+The way to support this is to use the [Sufficient](https://github.com/djalbat/sufficient) package:
+
+```
+import { Body } from "easy";
+import { controller } from "sufficient";
+
+import createMethods from "./example/createMethods";
+
+...
+
+const body = new Body(),  ///
+      view =
+
+        <View/>
+
+      ,
+      model = null,
+      scheduler = null;
+
+controller.assignMethods(createMethods, scheduler, model, view);
+
+body.mount(view);
+```
+
+Then the `createMethos()` function can be like the following:
+
+```
+export default function createMethods(scheduler, model, view) {
+  function copyOrPasteUnicodeCharacter(unicodeCharacter) {
+    console.log(unicodeCharacter);
+  }
+
+  return ({
+    copyOrPasteUnicodeCharacter
+  });
+}
+```
+
+Lastly, there is a `focusUnicodeCharacterDropdownInput()` method that can be utilised by includeing the controller methods that come with the picker itself:
+
+```
+import { createUnicodeMethods } from "occam-unicode";
+
+...
+
+controller.assignMethods(createUnicodeMethods, scheduler, model, view);
+
+...
+```
+
+Now the Unicode picker can be focused:
+
+```
+controller.focusUnicodeCharacterDropdownInput();
+```
+
 ## Building
 
 Automation is done with [npm scripts](https://docs.npmjs.com/misc/scripts), have a look at the `package.json` file. The pertinent commands are:
