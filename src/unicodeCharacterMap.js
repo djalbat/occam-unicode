@@ -494,11 +494,12 @@ export const relationalCharacterMap = {
 
 export const arithmeticCharacterMap = {
   "PLUS SIGN": 0x002B,
-  "MINUS SIGN": 0x2212,
+  "HYPHEN-MINUS": 0x002D,
   "DIVISION SIGN": 0x00F7,
   "MULTIPLICATION SIGN": 0x00D7,
   "MINUS-OR-PLUS SIGN": 0x2213,
   "PLUS-MINUS SIGN": 0x00B1,
+  "MINUS SIGN": 0x2212,
   "LEFT FLOOR": 0x230A,
   "RIGHT FLOOR": 0x230B,
   "LEFT CEILING": 0x2308,
