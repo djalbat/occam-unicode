@@ -8,7 +8,7 @@ import DropdownList from "../../list/dropdown";
 import UnicodeCharacterDropdownItem from "../../item/dropbown/unicodeCharacter";
 
 import { greatSize } from "../../sizes";
-import { codePoints, unicodeCharacters } from "../../characterMap";
+import { codePoints, characters } from "../../characterMap";
 import { unicodeCharacterDropdownListMaxHeight } from "../../styles";
 
 const { commonScrollbarThumbBackgroundColour, commonScrollbarTrackBackgroundColour, commonScrollbarCornerBackgroundColour } = commonScheme;
@@ -51,9 +51,8 @@ class UnicodeCharacterDropdownList extends DropdownList {
   }
 
   childElements() {
-    const unicodeCharacterDropdownItems = unicodeCharacters.map((unicodeCharacter, index) => {
-            const character = unicodeCharacter, ///
-                  codePoint = codePoints[index];
+    const unicodeCharacterDropdownItems = characters.map((character, index) => {
+            const codePoint = codePoints[index];
 
             return (
 
