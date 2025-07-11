@@ -8,7 +8,7 @@ import DropdownList from "../../list/dropdown";
 import UnicodeCharacterDropdownItem from "../../item/dropbown/unicodeCharacter";
 
 import { greatSize } from "../../sizes";
-import { codePoints, unicodeCharacters } from "../../unicodeCharacterMap";
+import { codePoints, unicodeCharacters } from "../../characterMap";
 import { unicodeCharacterDropdownListMaxHeight } from "../../styles";
 
 const { commonScrollbarThumbBackgroundColour, commonScrollbarTrackBackgroundColour, commonScrollbarCornerBackgroundColour } = commonScheme;

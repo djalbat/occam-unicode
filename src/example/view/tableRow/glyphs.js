@@ -6,7 +6,7 @@ import JuliaMonoGlyphTableCell from "../tableCell/glyph/juliaMono";
 import UnicodeCharacterTableCell from "../tableCell/unicodeCharacter";
 import ComputerModernGlyphTableCell from "../tableCell/glyph/computerModern";
 
-import unicodeCharacterMap from "../../../unicodeCharacterMap";
+import unicodeCharacterMap from "../../../characterMap";
 
 export default class GlyphsTableRow extends Element {
   childElements() {

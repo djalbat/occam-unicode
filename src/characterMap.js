@@ -1075,7 +1075,7 @@ export const superscriptSubscriptCharacterMap = {
   "SUBSCRIPT EQUALS SIGN": 0x208C
 };
 
-const unicodeCharacterMap = {
+const characterMap = {
   ...shapeCharacterMap,
   ...angleCharacterMap,
   ...arrowCharacterMap,
@@ -1100,12 +1100,12 @@ const unicodeCharacterMap = {
   ...superscriptSubscriptCharacterMap
 };
 
-export default unicodeCharacterMap;
+export default characterMap;
 
-export const unicodeCharacters = Object.keys(unicodeCharacterMap);  ///
+export const characters = Object.keys(characterMap);  ///
 
-export const codePoints = unicodeCharacters.map((unicodeCharacter) => {
-  const codePoint = unicodeCharacterMap[unicodeCharacter];
+export const codePoints = characters.map((character) => {
+  const codePoint = characterMap[character];
 
   return codePoint;
 });

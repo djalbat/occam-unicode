@@ -15,7 +15,9 @@
 
 This consists of the Unicode picker, present in both the IDE and the grammars sandbox.
 
-The example also shows all the Unicode characters currently in the picker. They are broken down into collections for the purposes of showcasing and checking the corresponding glyphs in both JuliaMono and Computer Modern Unicode. All of the twenty variants of the latter that Occam supports are shown. The collections are somewhat arbitrary and follow the Unicode standard only vaguely, they have no purpose other than convenience here and are only exported re-joined as a whole. 
+The example also shows all the Unicode characters currently in the picker. 
+
+They are broken down into collections for the purposes of showcasing and checking the corresponding glyphs in both JuliaMono and Computer Modern Unicode. All of the twenty variants of the latter that Occam supports are shown. The collections are somewhat arbitrary and follow the Unicode standard only vaguely, they have no purpose other than convenience here and are only exported re-joined as a whole. 
 
 It is envisaged that more Unicode characters will be added to the picker over time.
 

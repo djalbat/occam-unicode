@@ -27,7 +27,7 @@ import { shapeCharacterMap,
          doubleTripleArrowCharacterMap,
          parenthesisBracketCharacterMap,
          doubleStruckLettersCharacterMap,
-         superscriptSubscriptCharacterMap  } from "../unicodeCharacterMap";
+         superscriptSubscriptCharacterMap  } from "../characterMap";
 
 export default class View extends Element {
   childElements() {
